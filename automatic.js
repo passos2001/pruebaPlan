@@ -7,7 +7,7 @@ const semanasMap = {
 
 async function cargarSemana(semanaHtmlId, semanaNumero) {
   try {
-    const response = await fetch(`../data/semana${semanaNumero}.json`);
+    const response = await fetch(`semana${semanaNumero}.json`);
     const data = await response.json();
 
     // Recorremos los días de esa semana
